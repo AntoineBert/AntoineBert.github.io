@@ -38,10 +38,10 @@
     "project3": {
         "title": "[EN] CSU - ABS Control Logic Modeling (2024)",
         "excerpt": "Anti-lock Braking System (ABS) simulation and analysis using MATLAB/Simulink.",
-        "image": "assets/banner/3_abs.jpg",
+        "image": "assets/banner/3_ABS.png",
         "buttonColor": "green",
         "description": "This project involved the development of a comprehensive ABS simulation using a quarter-car model. The study focused on modeling the interaction between hydraulic lag, tire-road friction (Pacejka model), and control logic to optimize braking performance and vehicle stability under various road conditions.",
-        "visual": "assets/banner/3_abs.jpg",
+        "visual": "assets/banner/3_ABS.png",
         "contributions": [
             "Modeled a complete automotive braking system including hydraulic lag, tire friction (Pacejka model), and vehicle dynamics.",
             "Designed and tuned a PID controller to maintain an optimal slip ratio of 0.2, reducing stopping distance by 50 meters compared to non-ABS systems.",
