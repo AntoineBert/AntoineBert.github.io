@@ -1,0 +1,164 @@
+{
+    "project1": {
+        "title": "[EN] Kohler Engine Co. Predictive Engine Modeling (2025)",
+        "excerpt": "Development of a predictive simulation workflow for a 1L Hydrogen-fueled engine.",
+        "image": "assets/banner/1_piston.png",
+        "buttonColor": "green",
+        "description": "Part of the ARPA-e INTEGRATE initiative, this project aims to create a high-efficiency hybrid power system by coupling Solid Oxide Fuel Cells (SOFC) with a Hydrogen-fueled ICE. My work focused on the complete conversion of a heavy-duty diesel engine to spark-ignited hydrogen operation, targeting 10kW output and 35% thermal efficiency.",
+        "visual": "assets/banner/1_animation.gif",
+        "contributions": [
+            "Redesigned piston geometry to optimize the compression ratio for hydrogen's unique combustion characteristics.",
+            "Performed thermal and structural FEA to ensure component durability under high hydrogen thermal loads.",
+            "Developed a multi-scale simulation workflow: 3D CFD (CONVERGE) for combustion analysis and 1D Modeling (GT-Power) for system-level performance.",
+            "Validated predictive models against experimental targets to define optimal engine operating strategies."
+        ],
+        "techStack": ["SolidWorks", "Abaqus CAE", "CONVERGE CFD","CHEMKIN", "Python CANTERA", "GT Power", "MATLAB", "Tecplot 360", "HPC Linux Bash"],
+        "liveLink": "assets/pdf/Project_1.pdf",
+        "repoLink": null,
+        "presLink": "assets/pdf/Presentation.ppsx"
+    },
+    "project2": {
+        "title": "[EN] CSU - Exhaust Manifold Flow Dynamics (2024)",
+        "excerpt": "Flow dynamics and scavenging phenomena in a exhaust manifolds.",
+        "image": "assets/banner/2_scavenging.png",
+        "buttonColor": "blue",
+        "description": "This project involved a transient CFD simulation of a 4-cylinder engine exhaust manifold using ANSYS Fluent. The study focused on fluid dynamics optimization to reduce back pressure and enhance the scavenging effect, which are critical for increasing engine volumetric efficiency and power output.",
+        "visual": "assets/banner/2_animation.gif",
+        "contributions": [
+            "Conducted transient flow simulations in ANSYS Fluent to visualize pressure wave propagation and velocity streamlines.",
+            "Analyzed the impact of manifold geometry on scavenging phenomena and exhaust gas interference between cylinders.",
+            "Utilized ANSYS Workbench for meshing and post-processing of pressure results (achieving detailed transient pressure plots).",
+            "Evaluated back pressure constraints to optimize manifold design for high-performance applications."
+        ],
+        "techStack": ["ANSYS Fluent", "SolidWorks", "SpaceClaim", "VS Code", "C++"],
+        "liveLink": "assets/pdf/Project_2.pdf",
+        "repoLink": "https://github.com/AntoineBert/Exhaust-Manifold-Flow-Dynamics",
+        "presLink": null
+    },
+    "project3": {
+        "title": "[EN] CSU - ABS Control Logic Modeling (2024)",
+        "excerpt": "Anti-lock Braking System (ABS) simulation and analysis using MATLAB/Simulink.",
+        "image": "assets/banner/3_abs.jpg",
+        "buttonColor": "green",
+        "description": "This project involved the development of a comprehensive ABS simulation using a quarter-car model. The study focused on modeling the interaction between hydraulic lag, tire-road friction (Pacejka model), and control logic to optimize braking performance and vehicle stability under various road conditions.",
+        "visual": "assets/banner/3_abs.jpg",
+        "contributions": [
+            "Modeled a complete automotive braking system including hydraulic lag, tire friction (Pacejka model), and vehicle dynamics.",
+            "Designed and tuned a PID controller to maintain an optimal slip ratio of 0.2, reducing stopping distance by 50 meters compared to non-ABS systems.",
+            "Conducted comparative analysis: the Bang-Bang controller proved more robust for daily driving, while the PID offered superior performance (13s vs 16s stopping time).",
+            "Simulated hydraulic pressure variations and wheel speed oscillations to evaluate driver pedal feel and system stability."
+        ],
+        "techStack": ["MATLAB", "Simulink", "PID Tuner"],
+        "liveLink": "assets/pdf/Project_3.pdf",
+        "repoLink": null,
+        "presLink": null
+    },
+    "project4": {
+        "title": "[FR] Nobatek - Solar Tracker (2024)",
+        "excerpt": "Structural optimization and control system implementation for a high-efficiency solar tracking prototype.",
+        "image": "assets/banner/4_tracker.png",
+        "buttonColor": "green",
+        "description": "This industrial project at ENSTA Bretagne aimed to finalize and characterize a dual-axis solar tracker. The main challenges involved structural stabilization to mitigate wind-induced vibrations and the implementation of a precise solar tracking algorithm to maximize energy capture.",
+        "visual": "assets/banner/4_animation.gif",
+        "contributions": [
+            "Redesigned the chassis and actuator mounting system to eliminate mechanical play and structural vibrations.",
+            "Conducted kinematic and static load studies to ensure system stability under real-world environmental conditions.",
+            "Implemented a solar tracking algorithm based on astronomical coordinates to optimize panel orientation.",
+            "Performed a comparative energy study showing a significant production gain compared to fixed-tilt solar installations."
+        ],
+        "techStack": ["Catia V5", "RdM7 LeMans", "Siemens NX7", "Abaqus CAE", "SimulIDE", "Python", "Arduino C++", "LaTeX"],
+        "liveLink": "assets/pdf/Project_4.pdf",
+        "repoLink": null,
+        "presLink": null
+    },
+    "project5": {
+        "title": "[FR] Thales - LARS: Naval Drone Launch & Recovery System (2023)",
+        "excerpt": "Design and mechanical analysis of a recovery system for unmanned underwater vehicles (UUV) for Thales.",
+        "image": "assets/banner/5_LARS.jpg",
+        "buttonColor": "blue",
+        "description": "Developed for Thales Underwater Systems, this project focused on the 'LARS' (Launch and Recovery System) for autonomous underwater drones. The challenge was to design a robust mechanism capable of safely recovering a unmanned drone from a moving vessel, minimizing manual intervention and ensuring structural integrity in marine environments.",
+        "visual": "assets/banner/5_LARS.jpg",
+        "contributions": [
+            "Designed the complete 3D assembly of the recovery mechanism using CATIA V5, optimizing for compactness and ease of maintenance.",
+            "Performed multibody dynamic simulations in Siemens NX to validate the kinematic path of the recovery sequence and calculate joint reaction forces.",
+            "Conducted a comparative study of architectural solutions (Pantograph vs. Lever), using a decision matrix based on weight, reliability, and operational speed.",
+            "Applied Systems Engineering (SysML) principles to define functional requirements and manage complex interface constraints between the ship and the drone."
+        ],
+        "techStack": ["Catia V5", "Abaqus CAE", "Siemens NX7", "SysML"],
+        "liveLink": null,
+        "repoLink": null,
+        "presLink": null
+    },
+    "project6": {
+        "title": "[FR] ENSTA - SoC & NoC Architecture Modeling (2023)",
+        "excerpt": "Python-based object-oriented modeling of Systems-on-Chip (SoC) and Network-on-Chip (NoC) architectures.",
+        "image": "assets/banner/6_IHM.png",
+        "buttonColor": "green",
+        "description": "This computer science project focused on the high-level modeling of complex Systems-on-Chip. The goal was to develop a Python framework capable of simulating data exchanges between processing nodes, memory units, and a Network-on-Chip (NoC), using shortest-path algorithms to optimize communication efficiency.",
+        "visual": "assets/banner/6_IHM.png",
+        "contributions": [
+            "Architected a modular simulation environment using Object-Oriented Programming (Python) to represent SoC components (CPUs, Memories, Routers).",
+            "Implemented a custom Dijkstra-based algorithm to manage data packet routing through the Network-on-Chip (NoC).",
+            "Developed a behavioral task manager to simulate real-time memory requests and compute-node workloads.",
+            "Analyzed system performance constraints, including data integrity and potential latencies within the communication network."
+        ],
+        "techStack": ["Python", "PyQT5", "LaTeX", "HTML"],
+        "liveLink": "assets/pdf/Project_6.pdf",
+        "repoLink": "https://github.com/AntoineBert/SoC-Architecture-Modeling",
+        "presLink": null
+    },
+    "project7": {
+        "title": "[FR] ENSTA - GNSS Positioning & Signal Analysis (2023)",
+        "excerpt": "Technical study of Global Navigation Satellite Systems and real-time NMEA data processing.",
+        "image": "assets/banner/7_GSTAR.png",
+        "buttonColor": "green",
+        "description": "This systems engineering project focused on the principles of satellite-based positioning. The work involved analyzing error sources (ionospheric, clock bias) and implementing data processing for NMEA frames to achieve precise geographic positioning using GSTAR-IV and Spectra-80 receivers.",
+        "visual": "assets/banner/7_GSTAR.png",
+        "contributions": [
+            "Analyzed GNSS signal architecture and the mathematical principles of trilateration and differential GPS (DGPS).",
+            "Decoded and processed NMEA data streams (GGA, GSV frames) to extract real-time latitude, longitude, and altitude.",
+            "Conducted a comparative study between standard GPS receivers and high-precision centimeter-level sensors (Spectra-80).",
+            "Evaluated atmospheric and orbital error factors to understand the limits of precision in urban and open environments."
+        ],
+        "techStack": ["Python", "PyNMEA2", "LaTeX"],
+        "liveLink": "assets/pdf/Project_7.pdf",
+        "repoLink": "https://github.com/AntoineBert/GNSS-Positioning-And-Signal-Analysis",
+        "presLink": null
+    },
+    "project8": {
+        "title": "[FR] ENSTA - Mellin Transform & Pattern Recognition (2022)",
+        "excerpt": "Mathematical study and algorithmic implementation of the Mellin Transform for signal processing.",
+        "image": "assets/banner/8_Mellin.png",
+        "buttonColor": "blue",
+        "description": "This theoretical and applied mathematics project focused on the Mellin Transform, a fundamental tool for scale-invariant signal processing. The objective was to establish the mathematical links between Mellin, Fourier, and Laplace transforms and to develop an algorithm for invariant pattern recognition.",
+        "visual": "assets/banner/8_Mellin.png",
+        "contributions": [
+            "Conducted a comprehensive mathematical study of the Mellin Transform and its properties in integral calculus.",
+            "Established the relationship between the Fourier-Mellin transform and scale/rotation invariance in digital signals.",
+            "Developed a Python-based algorithm to compute the Mellin Transform for object recognition applications.",
+            "Researched industrial applications in radar signal processing and biometric fingerprint verification."
+        ],
+        "techStack": ["LaTeX"],
+        "liveLink": "assets/pdf/Project_8.pdf",
+        "repoLink": null,
+        "presLink": null
+    },
+    "project9": {
+        "title": "[FR] TIPE - Tire-Road Friction & Braking Dynamics (2022)",
+        "excerpt": "Mathematical modeling of tire friction coefficients and impact of weather conditions on braking safety.",
+        "image": "assets/banner/9_tipe.png", 
+        "buttonColor": "green",
+        "description": "This research project focused on the complex physics of the tire-road interface. Using the Pacejka 'Magic Formula', I modeled how different weather conditions (dry, wet, icy) affect the friction coefficient and, consequently, the efficiency of emergency braking and ABS triggering.",
+        "visual": "assets/banner/9_tipe.png",
+        "contributions": [
+            "Analyzed various friction models (Coulomb, Stiction, Pacejka) to characterize longitudinal tire forces.",
+            "Modeled the influence of water film thickness and road texture on the friction-slip (mu-slip) curve.",
+            "Simulated emergency braking scenarios in Xcos/Scilab to quantify the increase in stopping distance on degraded surfaces.",
+            "Correlated statistical accident data with physical braking limits to evaluate the real-world impact of road safety systems."
+        ],
+        "techStack": ["Python", "XCOS", "Scilab"],
+        "liveLink": "assets/pdf/Project_9.pdf",
+        "repoLink": null,
+        "presLink": null
+    }
+}

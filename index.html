@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB Portfolio</title>
+    <meta name="description" content="Antoine Bertrand - Propulsion & Powertrain Engineer specializing in Hydrogen ICE, CFD simulation (ANSYS), and System Modeling (GT-Power, MATLAB/Simulink). Research at Colorado State University and ENSTA Bretagne.">
+    <meta name="keywords" content="Powertrain Engineer, Automotive Engineering, Hydrogen Engine, CFD, ANSYS Fluent, GT-Power, MATLAB, Simulink, Propulsion Systems, Antoine Bertrand">
+    <meta name="author" content="Antoine Bertrand">
+    <link rel="icon" href="assets/img/favicon.png" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.tailwindcss.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"></noscript>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"></noscript>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"></noscript>
+    <!-- Critical CSS for above-the-fold content -->
+    <style>
+        /* Critical styles for faster initial render */
+        body { background-color: #0d1117; color: #f0f6fc; }
+        .bg-secondary-black { background-color: #161b22; }
+        .text-text-light { color: #f0f6fc; }
+        .transition-all { transition: all 0.3s ease-in-out; }
+        #modal-visual {
+            width: 100%;
+            max-height: 350px;
+            object-fit: contain;
+            margin-bottom: 1.5rem;
+            border-radius: 0.75rem;
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-primary-black text-text-light">
+
+    <!-- Header & Navigation -->
+    <header id="main-header" class="bg-secondary-black shadow-lg sticky top-0 z-50 transition-all duration-300 ease-in-out header-visible">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-text-light hover:text-accent-gray transition-colors">Antoine Bertrand</a>
+            <div class="hidden md:flex space-x-6 font-semibold items-center">
+                <a href="#about" class="hover:text-accent-gray transition-colors">About</a>
+                <a href="#resume" class="hover:text-accent-gray transition-colors">Resume</a>
+                <a href="#projects" class="hover:text-accent-gray transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-accent-gray transition-colors">Contact</a>
+                <button id="theme-toggle" aria-label="Toggle theme" class="focus:outline-none text-text-light hover:text-accent-gray transition-colors p-2 rounded-full">
+                    <i id="theme-icon" class="fa-solid fa-sun text-xl"></i>
+                </button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="flex items-center space-x-4 md:hidden">
+                <button id="theme-toggle-mobile" aria-label="Toggle theme" class="focus:outline-none text-text-light hover:text-accent-gray transition-colors p-2 rounded-full">
+                    <i id="theme-icon-mobile" class="fa-solid fa-sun text-xl"></i>
+                </button>
+                <button id="menu-button" class="focus:outline-none text-text-light">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-secondary-black shadow-lg py-2 absolute top-full left-0 w-full z-40">
+            <a href="#about" class="block px-4 py-2 hover:bg-hover-light transition-colors">About</a>
+            <a href="#resume" class="block px-4 py-2 hover:bg-hover-light transition-colors">Resume</a>
+            <a href="#projects" class="block px-4 py-2 hover:bg-hover-light transition-colors">Projects</a>
+            <a href="#contact" class="block px-4 py-2 hover:bg-hover-light transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home" class="hero-background min-h-screen flex items-center text-center md:text-left section-fade-in px-4">
+            <div class="container mx-auto max-w-3xl md:ml-12 p-8 rounded-2xl">
+                <h1 class="text-5xl md:text-6xl font-extrabold hero-title-text leading-tight mb-4">
+                    Hello, I'm <span class="hero-accent-text">Antoine Bertrand</span>
+                </h1>
+                <p class="text-2xl md:text-3xl font-light hero-gray-text mb-6">
+                    Mechanical Engineer graduated from <span class="font-semibold text-text-light">Colorado State University</span>.
+                </p>
+                <p class="text-lg md:text-xl font-light hero-gray-text mb-8 italic">
+                    Specializing in CAD Design, Structural Analysis, Composites & Advanced CFD Simulations.
+                </p>
+                <a href="#projects" class="inline-block hero-button font-bold py-3 px-6 rounded-full shadow-lg hover:bg-accent-green/80 transition-all transform hover:scale-105">
+                    View My Projects
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container mx-auto px-4 py-16 section-fade-in">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center bg-secondary-black p-8 rounded-2xl shadow-lg">
+                    <img src="assets/img/profile.jpg" alt="Antoine Bertrand" loading="lazy" width="160" height="160" class="w-40 h-40 rounded-full mb-6 md:mb-0 md:mr-8 shadow-md object-cover object-center border-2 border-accent-blue">
+                    
+                    <div class="text-center md:text-left">
+                        <p class="text-lg leading-relaxed mb-4">
+                            Graduate student at <strong>Colorado State University</strong>, pursuing a double MSc in <strong>Mechanical Engineering</strong> and <strong>Automotive Engineering</strong> through a partnership with <strong>ENSTA Bretagne</strong>. 
+                        </p>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Currently working as a <strong>Teaching Assistant</strong> in Engineering Design and a <strong>Research Assistant</strong> at the <strong>Powerhouse Energy Campus</strong>, focusing on hydrogen combustion engines.
+                        </p>
+                        <p class="text-lg leading-relaxed mb-4">
+                            Passionate about automotive engineering since childhood, I am eager to apply my expertise in powertrain design, hydrogen propulsion, and computational simulations. My academic journey across France and the U.S. has provided me with a strong technical foundation in <strong>CFD, FEA</strong>, and energy systems, preparing me to contribute to the future of sustainable mobility.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="container mx-auto px-4 py-16 section-fade-in">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Resume</h2>
+
+                <div class="flex justify-center mb-12">
+                    <a href="assets/pdf/Antoine_Bertrand_CV.pdf" target="_blank" 
+                    class="flex items-center gap-3 bg-accent-blue hover:bg-blue-600 text-primary-black font-bold py-3 px-8 rounded-full shadow-lg transition-all transform hover:scale-105">
+                        <i class="fa-solid fa-file-pdf text-xl"></i>
+                        Download Full Resume (PDF)
+                    </a>
+                </div>
+                
+                <!-- Education Sub-section -->
+                <section id="resume" class="container mx-auto px-4 py-16 section-fade-in">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-4xl font-bold text-center mb-12">Education</h2>
+                        
+                        <div class="space-y-12">
+                            
+                            <div class="relative pl-8 border-l-4 border-accent-blue bg-secondary-black p-8 rounded-r-2xl shadow-lg">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-accent-blue rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">MSc. in Mechanical Engineering</h3>
+                                        <p class="text-accent-blue font-semibold text-lg">Colorado State University</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-text-light">August 2024 – Expected May 2026</p>
+                                        <p class="text-accent-gray italic">Fort Collins, CO | <span class="text-accent-blue">GPA: 3.85/4.0</span></p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                                    <div>
+                                        <h4 class="font-bold text-sm uppercase tracking-wider text-accent-gray mb-2">Relevant Coursework</h4>
+                                        <ul class="list-disc list-inside text-sm space-y-1">
+                                            <li>MECH533 - Composites Product Development</li>
+                                            <li>MECH529 - Advanced Mechanical Systems</li>
+                                            <li>MECH487 - Computational Fluid Dynamics (CFD)</li>
+                                            <li>MECH502 - Advanced/Additive Manufacturing Engineering</li>
+                                            <li>MECH580 - Artificial Intelligence and Engr Design</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm uppercase tracking-wider text-accent-gray mb-2">Design Project</h4>
+                                        <p class="text-sm leading-relaxed">Development of a predictive simulation workflow for a 1L Hydrogen-fueled engine.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-8 border-l-4 border-accent-green bg-secondary-black p-8 rounded-r-2xl shadow-lg">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-accent-green rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">MSc. in Automotive Engineering</h3>
+                                        <p class="text-accent-green font-semibold text-lg">ENSTA (French Grande École)</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-text-light">August 2022 – December 2025</p>
+                                        <p class="text-accent-gray italic">Brest, France | <span class="text-accent-green">GPA: 3.6/4.0</span></p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                                    <div>
+                                        <h4 class="font-bold text-sm uppercase tracking-wider text-accent-gray mb-2">Relevant Coursework</h4>
+                                        <ul class="list-disc list-inside text-sm space-y-1">
+                                            <li>CU2.1 - Partial Diff Eq, Fluid Dynamics and Signal Processing</li>
+                                            <li>CU3.1 - Finite Element, Materials and Applied Mathematics</li>
+                                            <li>CU3.2 - Mechanical Engr, Thermodynamics and Power Transmition</li>
+                                            <li>CU3.3 - Financial Management</li>
+                                            <li>CU4.1 - Composites, Vibrations and Shells</li>
+                                            <li>CU4.2 - Vehicle Architecture</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm uppercase tracking-wider text-accent-gray mb-2">Design Project</h4>
+                                        <p class="text-sm leading-relaxed">Structural optimization and control system implementation for a high-efficiency solar tracking prototype.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative pl-8 border-l-4 border-gray-500 bg-secondary-black p-8 rounded-r-2xl shadow-lg opacity-90">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-gray-500 rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">Preparatory Classes for Top Engineering Schools</h3>
+                                        <p class="text-gray-400 font-semibold text-lg">P. Corneille High School</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold">September 2020 – June 2022</p>
+                                        <p class="text-accent-gray italic">Rouen, France | <span class="text-gray-400">GPA: 4.0/4.0</span></p>
+                                    </div>
+                                </div>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+                                    <div>
+                                        <h4 class="font-bold text-sm uppercase tracking-wider text-gray-500 mb-2 text-gray-500">Intensive Program</h4>
+                                        <p class="text-sm">Two-year intensive program in advanced Mathematics, Physics and Engineering Sciences for competitive entrance exams to top French engineering schools (National Ranking: 1440/5000).</p>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-sm uppercase tracking-wider text-gray-500 mb-2 text-gray-500">Design Project (TIPE)</h4>
+                                        <p class="text-sm">Analyzed tire grip using the Pacejka formula (Michelin collab). Modeled an ABS in <strong>MATLAB/Simulink</strong> and conducted data analysis using <strong>Python</strong>.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Experience Sub-section -->
+                <section id="experience" class="container mx-auto px-4 py-16 section-fade-in">
+                    <div class="max-w-5xl mx-auto">
+                        <h2 class="text-4xl font-bold text-center mb-12">Professional Experience</h2>
+                        
+                        <div class="space-y-12">
+                            
+                            <div class="relative pl-8 border-l-4 border-accent-blue bg-secondary-black p-8 rounded-r-2xl shadow-lg">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-accent-blue rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">Research Assistant on Hydrogen IC Engines</h3>
+                                        <p class="text-accent-blue font-semibold text-lg">Kohler Engines Co. (at CSU Powerhouse)</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-text-light">August 2024 – Present</p>
+                                        <p class="text-accent-gray italic">Fort Collins, CO</p>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside text-sm space-y-3 text-gray-300">
+                                    <li>Modeled H2 combustion using <strong>Converge CFD</strong> and <strong>CHEMKIN</strong> to create a predictive combustion model in <strong>GT-Power</strong>, achieving validation errors below 2% compared to experimental test data.</li>
+                                    <li>Designed and optimized the piston head geometry to reduce the compression ratio from 22:1 to 10:1, enabling a diesel-to-H2 conversion while maintaining 30% efficiency.</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative pl-8 border-l-4 border-accent-green bg-secondary-black p-8 rounded-r-2xl shadow-lg">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-accent-green rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">Automotive Design Intern</h3>
+                                        <p class="text-accent-green font-semibold text-lg">Fiat Powertrain Technologies (FPT)</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-text-light">May 2024 – August 2024</p>
+                                        <p class="text-accent-gray italic">Lyon, France</p>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside text-sm space-y-3 text-gray-300">
+                                    <li>Designed solutions in <strong>Siemens NX</strong> to integrate H2 fuel cell stacks into vehicle architecture, ensuring seamless packaging and fitment.</li>
+                                    <li>Optimized complex powertrains using <strong>Simcenter AmeSim</strong>, ensuring compliance with FTP system specifications and client performance targets.</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative pl-8 border-l-4 border-purple-500 bg-secondary-black p-8 rounded-r-2xl shadow-lg">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-purple-500 rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">Preliminary Design Project</h3>
+                                        <p class="text-purple-400 font-semibold text-lg">THALES Underwater Systems</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-text-light">September 2023 – January 2024</p>
+                                        <p class="text-accent-gray italic">Brest, France</p>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside text-sm space-y-3 text-gray-300">
+                                    <li>Led a 4-month preliminary design study using <strong>SysML</strong> to develop system specifications and propose innovative solutions for mine counter-measures.</li>
+                                    <li>Designed and simulated the chosen solution in <strong>Siemens NX</strong> for the launch and release of unmanned sea drones (MMCMMS).</li>
+                                </ul>
+                            </div>
+
+                            <div class="relative pl-8 border-l-4 border-gray-500 bg-secondary-black p-8 rounded-r-2xl shadow-lg opacity-90">
+                                <div class="absolute -left-3 top-8 w-5 h-5 bg-gray-500 rounded-full"></div>
+                                <div class="flex flex-col md:flex-row justify-between items-start mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-text-light">Electrical & Mechanical Engineering Intern</h3>
+                                        <p class="text-gray-400 font-semibold text-lg">GAZFIO SA</p>
+                                    </div>
+                                    <div class="text-right">
+                                        <p class="font-bold text-text-light">January 2023 – February 2023</p>
+                                        <p class="text-accent-gray italic">Rouen, France</p>
+                                    </div>
+                                </div>
+                                <ul class="list-disc list-inside text-sm space-y-3 text-gray-300">
+                                    <li>Mastered MIG welding techniques and electrical wiring for gas treatment systems, reducing installation time by 10% through field optimization.</li>
+                                    <li>Assisted in preparing methanization facilities for <strong>GRDF</strong>, ensuring the delivery of one unit per week within a team of 10 engineers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Skills Sub-section -->
+                <div class="bg-secondary-black p-8 rounded-2xl shadow-md">
+                    <h3 class="text-3xl font-bold text-center mb-6">Technical Skills</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <div>
+                            <h4 class="text-xl font-bold text-accent-blue text-center mb-4">Simulation & Analysis</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-wind text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">ANSYS Fluent (CFD)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-wind text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">Converge v4 (CFD)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-flask text-3xl mb-2 text-blue-500"></i>
+                                    <p class="font-semibold text-sm">ANSYS Chemkin (CFD)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-vector-square text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">ABAQUS CAE (FEA)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-layer-group text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">eLaminate (FEA)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-diagram-project text-3xl mb-2 text-blue-500"></i>
+                                    <p class="font-semibold text-sm">Simcenter Amesim (1D)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-microchip text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">GT-SUITE / GTPower (1D)</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-matlab-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">Simulink (1D)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-accent-green text-center mb-4">Programming Languages</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-matlab-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">MATLAB / Simulink</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-python-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">Python</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-arduino-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">Arduino / C++</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-c-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">C</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-bash-plain text-3xl mb-2 text-gray-400"></i>
+                                    <p class="font-semibold text-sm">Linux Bash</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-database text-3xl mb-2 text-green-400"></i>
+                                    <p class="font-semibold text-sm">SQL</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-html5-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">HTML5 / Tailwind</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="devicon-java-plain colored text-3xl mb-2"></i>
+                                    <p class="font-semibold text-sm">Java</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="text-xl font-bold text-accent-blue text-center mb-4">CAD & Design</h4>
+                            <div class="grid grid-cols-2 gap-4 text-center">
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-cubes text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">CATIA V5</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-drafting-compass text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">SolidWorks</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-layer-group text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">Siemens NX</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-diagram-project text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">ANSYS SpaceClaim</p>
+                                </div>
+                                <div class="skill-icon-transition p-4 rounded-xl shadow-md transform hover:scale-105 hover:shadow-xl flex flex-col items-center">
+                                    <i class="fa-solid fa-bezier-curve text-3xl mb-2 text-blue-400"></i>
+                                    <p class="font-semibold text-sm">GT-SUITE / GEM 3D</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container mx-auto px-4 py-16 section-fade-in">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Projects will be dynamically generated here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container mx-auto px-4 py-16 section-fade-in">
+            <div class="max-w-2xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12">Get In Touch</h2>
+                <div class="bg-secondary-black p-8 rounded-2xl shadow-lg">
+                    <div class="flex flex-col items-center space-y-4">
+                        <p class="text-xl text-center mb-4">Connect with me directly:</p>
+                        <div class="flex space-x-6">
+                            <a href="mailto:antoine.bertrand@colostate.edu" class="text-text-light hover:text-accent-blue transition-colors transform hover:scale-110" aria-label="Email">
+                                <i class="fa-solid fa-envelope text-4xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/antoineber/" target="_blank" class="text-text-light hover:text-accent-blue transition-colors transform hover:scale-110" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in text-4xl"></i>
+                            </a>
+                            <a href="https://github.com/AntoineBert" target="_blank" class="text-text-light hover:text-accent-blue transition-colors transform hover:scale-110" aria-label="GitHub">
+                                <i class="fab fa-github text-4xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-secondary-black text-accent-gray py-6 text-center">
+        <div class="container mx-auto">
+            <p>&copy; <span id="current-year"></span> Antoine BERTRAND. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-[100] transition-opacity duration-300 hidden opacity-0">
+        <div class="bg-secondary-black p-8 rounded-2xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative transform scale-95 transition-transform duration-300 modal-card">
+            <!-- Close Button -->
+            <button id="close-modal-btn" class="absolute top-4 right-4 text-text-light hover:text-accent-gray transition-colors">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+            </button>
+            <h3 id="modal-title" class="text-3xl font-bold mb-4">Project Title</h3>
+            <p id="modal-description" class="text-lg text-accent-gray mb-6"></p>
+            <img id="modal-visual" src="" alt="Project Visual Preview" class="hidden">
+            <div id="modal-details">
+                <h4 class="text-xl font-bold mb-2">My Role & Contributions:</h4>
+                <ul id="modal-contributions" class="list-disc list-inside text-lg mb-6 space-y-2"></ul>
+                <h4 class="text-xl font-bold mb-2">Tech Stack:</h4>
+                <ul id="modal-tech-stack" class="flex flex-wrap gap-2 text-lg"></ul>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                <button id="modal-live-link-btn" class="inline-block bg-accent-blue text-primary-black font-bold py-3 px-6 rounded-full text-center hover:bg-accent-blue/80 transition-colors mt-6">
+                    <i class="fa-solid fa-file-pdf mr-2"></i>Read Report
+                </button>
+                
+                <button id="modal-repo-link-btn" class="inline-block bg-white text-primary-black font-bold py-3 px-6 rounded-full text-center hover:bg-gray-200 transition-colors mt-6">
+                    <i class="fa-brands fa-github mr-2"></i>View Repository
+                </button>
+
+                <button id="modal-pres-link-btn" class="hidden bg-amber-500 text-primary-black font-bold py-3 px-6 rounded-full text-center hover:bg-amber-400 transition-all transform hover:scale-105 mt-6 shadow-lg">
+                    <i class="fa-solid fa-display mr-2"></i>View Presentation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script defer src="assets/js/projects.js"></script>
+    <script defer src="assets/js/modal.js"></script>
+    <script defer src="assets/js/scripts.js"></script>
+
+</body>
+</html>
