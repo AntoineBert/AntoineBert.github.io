@@ -36,19 +36,18 @@
         "presLink": null
     },
     "project3": {
-        "title": "[EN] CSU - ABS Control Logic Modeling (2024)",
-        "excerpt": "Anti-lock Braking System (ABS) simulation and analysis using MATLAB/Simulink.",
-        "image": "assets/banner/3_ABS.png",
+                "title": "[EN] CSU - CFD Simulation of a Rocket Nozzle (2024)",
+        "excerpt": "Dynamics of compressible flow through a converging-diverging nozzle.",
+        "image": "assets/banner/3_nozzle.png",
         "buttonColor": "green",
-        "description": "This project involved the development of a comprehensive ABS simulation using a quarter-car model. The study focused on modeling the interaction between hydraulic lag, tire-road friction (Pacejka model), and control logic to optimize braking performance and vehicle stability under various road conditions.",
-        "visual": "assets/banner/3_ABS.png",
+        "description": "In this lab, we explore the dynamics of compressible flow through a converging-diverging nozzle, a critical component in rocket engines and supersonic wind tunnels. The aim is to simulate and analyze high-speed flow conditions and phenomena such as shock waves, which occur at high Mach numbers, and to determine the nozzle's efficiency under varying conditions. By modeling three distinct cases—over-expanded, ideally-expanded, and under-expanded flow—the lab investigates how variations in back pressure affect the nozzle's performance.",
+        "visual": "assets/banner/3_nozzle.png",
         "contributions": [
-            "Modeled a complete automotive braking system including hydraulic lag, tire friction (Pacejka model), and vehicle dynamics.",
-            "Designed and tuned a PID controller to maintain an optimal slip ratio of 0.2, reducing stopping distance by 50 meters compared to non-ABS systems.",
-            "Conducted comparative analysis: the Bang-Bang controller proved more robust for daily driving, while the PID offered superior performance (13s vs 16s stopping time).",
-            "Simulated hydraulic pressure variations and wheel speed oscillations to evaluate driver pedal feel and system stability."
+            "Use Fluent to simulate shock waves and high-speed flow features in supersonic conditions.",
+            "Quantify the nozzle’s efficiency by calculating the thrust coefficient for each case, a critical performance metric in aerospace applications.",
+            "Assess the nozzle's effectiveness in each flow condition to understand optimal and non-optimal performance and discuss real-world applications and limitations of the analysis."
         ],
-        "techStack": ["MATLAB", "Simulink", "PID Tuner"],
+        "techStack": ["ANSYS Fluent", "ParaView", "Fluent Meshing"],
         "liveLink": "assets/pdf/Project_3.pdf",
         "repoLink": null,
         "presLink": null
@@ -72,10 +71,28 @@
         "presLink": null
     },
     "project5": {
+        "title": "[EN] CSU - ABS Control Logic Modeling (2024)",
+        "excerpt": "Anti-lock Braking System (ABS) simulation and analysis using MATLAB/Simulink.",
+        "image": "assets/banner/3_ABS.png",
+        "buttonColor": "blue",
+        "description": "This project involved the development of a comprehensive ABS simulation using a quarter-car model. The study focused on modeling the interaction between hydraulic lag, tire-road friction (Pacejka model), and control logic to optimize braking performance and vehicle stability under various road conditions.",
+        "visual": "assets/banner/3_ABS.png",
+        "contributions": [
+            "Modeled a complete automotive braking system including hydraulic lag, tire friction (Pacejka model), and vehicle dynamics.",
+            "Designed and tuned a PID controller to maintain an optimal slip ratio of 0.2, reducing stopping distance by 50 meters compared to non-ABS systems.",
+            "Conducted comparative analysis: the Bang-Bang controller proved more robust for daily driving, while the PID offered superior performance (13s vs 16s stopping time).",
+            "Simulated hydraulic pressure variations and wheel speed oscillations to evaluate driver pedal feel and system stability."
+        ],
+        "techStack": ["MATLAB", "Simulink", "PID Tuner"],
+        "liveLink": "assets/pdf/Project_5.pdf",
+        "repoLink": null,
+        "presLink": null
+    },
+    "project6": {
         "title": "[FR] Thales - LARS: Naval Drone Launch & Recovery System (2023)",
         "excerpt": "Design and mechanical analysis of a recovery system for unmanned underwater vehicles (UUV) for Thales.",
         "image": "assets/banner/5_LARS.jpg",
-        "buttonColor": "blue",
+        "buttonColor": "green",
         "description": "Developed for Thales Underwater Systems, this project focused on the 'LARS' (Launch and Recovery System) for autonomous underwater drones. The challenge was to design a robust mechanism capable of safely recovering a unmanned drone from a moving vessel, minimizing manual intervention and ensuring structural integrity in marine environments.",
         "visual": "assets/banner/5_LARS.jpg",
         "contributions": [
@@ -89,7 +106,7 @@
         "repoLink": null,
         "presLink": null
     },
-    "project6": {
+    "project7": {
         "title": "[FR] ENSTA - SoC & NoC Architecture Modeling (2023)",
         "excerpt": "Python-based object-oriented modeling of Systems-on-Chip (SoC) and Network-on-Chip (NoC) architectures.",
         "image": "assets/banner/6_IHM.png",
@@ -103,15 +120,15 @@
             "Analyzed system performance constraints, including data integrity and potential latencies within the communication network."
         ],
         "techStack": ["Python", "PyQT5", "LaTeX", "HTML"],
-        "liveLink": "assets/pdf/Project_6.pdf",
+        "liveLink": "assets/pdf/Project_7.pdf",
         "repoLink": "https://github.com/AntoineBert/SoC-Architecture-Modeling",
         "presLink": null
     },
-    "project7": {
+    "project8": {
         "title": "[FR] ENSTA - GNSS Positioning & Signal Analysis (2023)",
         "excerpt": "Technical study of Global Navigation Satellite Systems and real-time NMEA data processing.",
         "image": "assets/banner/7_GSTAR.png",
-        "buttonColor": "green",
+        "buttonColor": "blue",
         "description": "This systems engineering project focused on the principles of satellite-based positioning. The work involved analyzing error sources (ionospheric, clock bias) and implementing data processing for NMEA frames to achieve precise geographic positioning using GSTAR-IV and Spectra-80 receivers.",
         "visual": "assets/banner/7_GSTAR.png",
         "contributions": [
@@ -121,15 +138,15 @@
             "Evaluated atmospheric and orbital error factors to understand the limits of precision in urban and open environments."
         ],
         "techStack": ["Python", "PyNMEA2", "LaTeX"],
-        "liveLink": "assets/pdf/Project_7.pdf",
+        "liveLink": "assets/pdf/Project_8.pdf",
         "repoLink": "https://github.com/AntoineBert/GNSS-Positioning-And-Signal-Analysis",
         "presLink": null
     },
-    "project8": {
+    "project9": {
         "title": "[FR] ENSTA - Mellin Transform & Pattern Recognition (2022)",
         "excerpt": "Mathematical study and algorithmic implementation of the Mellin Transform for signal processing.",
         "image": "assets/banner/8_Mellin.png",
-        "buttonColor": "blue",
+        "buttonColor": "green",
         "description": "This theoretical and applied mathematics project focused on the Mellin Transform, a fundamental tool for scale-invariant signal processing. The objective was to establish the mathematical links between Mellin, Fourier, and Laplace transforms and to develop an algorithm for invariant pattern recognition.",
         "visual": "assets/banner/8_Mellin.png",
         "contributions": [
@@ -139,11 +156,11 @@
             "Researched industrial applications in radar signal processing and biometric fingerprint verification."
         ],
         "techStack": ["LaTeX"],
-        "liveLink": "assets/pdf/Project_8.pdf",
+        "liveLink": "assets/pdf/Project_9.pdf",
         "repoLink": null,
         "presLink": null
     },
-    "project9": {
+    "project10": {
         "title": "[FR] TIPE - Tire-Road Friction & Braking Dynamics (2022)",
         "excerpt": "Mathematical modeling of tire friction coefficients and impact of weather conditions on braking safety.",
         "image": "assets/banner/9_tipe.png", 
@@ -157,7 +174,7 @@
             "Correlated statistical accident data with physical braking limits to evaluate the real-world impact of road safety systems."
         ],
         "techStack": ["Python", "XCOS", "Scilab"],
-        "liveLink": "assets/pdf/Project_9.pdf",
+        "liveLink": "assets/pdf/Project_10.pdf",
         "repoLink": null,
         "presLink": null
     }
