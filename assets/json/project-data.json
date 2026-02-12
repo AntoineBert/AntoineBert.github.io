@@ -14,7 +14,7 @@
         ],
         "techStack": ["SolidWorks", "Abaqus CAE", "CONVERGE CFD","CHEMKIN", "Python CANTERA", "GT Power", "MATLAB", "Tecplot 360", "HPC Linux Bash"],
         "liveLink": "assets/pdf/Project_1.pdf",
-        "repoLink": null,
+        "repoLink": "https://github.com/AntoineBert/H2-Combustion-ConvergeCFD",
         "presLink": "assets/pdf/Presentation.ppsx"
     },
     "project2": {
@@ -85,7 +85,7 @@
         ],
         "techStack": ["MATLAB", "Simulink", "PID Tuner"],
         "liveLink": "assets/pdf/Project_5.pdf",
-        "repoLink": null,
+        "repoLink": "https://github.com/AntoineBert/ABS-Simulink-Simulation",
         "presLink": null
     },
     "project6": {
