@@ -1,9 +1,28 @@
 {
+    "project0": {
+        "title": "[EN] CSU - Airfoil Ai Optimization (2026)",
+        "excerpt": "This project implements a high-performance pipeline for aerodynamic shape optimization",
+        "image": "assets/banner/0_airfoil.png",
+        "buttonColor": "green",
+        "description": "This project implements a high-performance pipeline for aerodynamic shape optimization. It uses Bayesian Optimization to discover ideal NACA 4-digit airfoils across a flight envelope and trains a Random Forest Surrogate Model to provide instantaneous aerodynamic predictions.",
+        "visual": "assets/banner/0_airfoil.png",
+        "contributions": [
+"Implemented a Bayesian Optimization loop using Optuna (TPE Sampler) to maximize the L/D ratio across 1,000+ flight conditions.",
+        "Engineered a feature-scaling pipeline (StandardScaler) to normalize velocity and altitude inputs, ensuring high model sensitivity to subsonic speed variations.",
+        "Integrated XFoil and AeroSandbox into a Python-based automated solver for rapid generation of aerodynamic polar datasets.",
+        "Developed a Random Forest Regressor that predicts optimal 4-digit NACA parameters (m, p, t) with sub-millisecond inference time.",
+        "Generated multi-dimensional performance heatmaps to visualize the global efficiency 'sweet spots' across the flight envelope."
+        ],
+        "techStack": ["Python", "Jupyter Notbook", "Optuna", "SKlearn", "AeroToolbox", "Xfoil"],
+        "liveLink": null,
+        "repoLink": "https://github.com/AntoineBert/Foil-Optimization-AI",
+        "presLink": null
+    },
     "project1": {
         "title": "[EN] Kohler Engine Co. Predictive Engine Modeling (2025)",
         "excerpt": "Development of a predictive simulation workflow for a 1L Hydrogen-fueled engine.",
         "image": "assets/banner/1_piston.png",
-        "buttonColor": "green",
+        "buttonColor": "blue",
         "description": "Part of the ARPA-e INTEGRATE initiative, this project aims to create a high-efficiency hybrid power system by coupling Solid Oxide Fuel Cells (SOFC) with a Hydrogen-fueled ICE. My work focused on the complete conversion of a heavy-duty diesel engine to spark-ignited hydrogen operation, targeting 10kW output and 35% thermal efficiency.",
         "visual": "assets/banner/1_animation.gif",
         "contributions": [
@@ -21,7 +40,7 @@
         "title": "[EN] CSU - Exhaust Manifold Flow Dynamics (2024)",
         "excerpt": "Flow dynamics and scavenging phenomena in a exhaust manifolds.",
         "image": "assets/banner/2_scavenging.png",
-        "buttonColor": "blue",
+        "buttonColor": "green",
         "description": "This project involved a transient CFD simulation of a 4-cylinder engine exhaust manifold using ANSYS Fluent. The study focused on fluid dynamics optimization to reduce back pressure and enhance the scavenging effect, which are critical for increasing engine volumetric efficiency and power output.",
         "visual": "assets/banner/2_animation.gif",
         "contributions": [
@@ -56,7 +75,7 @@
         "title": "[FR] Nobatek - Solar Tracker (2024)",
         "excerpt": "Structural optimization and control system implementation for a high-efficiency solar tracking prototype.",
         "image": "assets/banner/4_tracker.png",
-        "buttonColor": "green",
+        "buttonColor": "blue",
         "description": "This industrial project at ENSTA Bretagne aimed to finalize and characterize a dual-axis solar tracker. The main challenges involved structural stabilization to mitigate wind-induced vibrations and the implementation of a precise solar tracking algorithm to maximize energy capture.",
         "visual": "assets/banner/4_animation.gif",
         "contributions": [
@@ -74,7 +93,7 @@
         "title": "[EN] CSU - ABS Control Logic Modeling (2024)",
         "excerpt": "Anti-lock Braking System (ABS) simulation and analysis using MATLAB/Simulink.",
         "image": "assets/banner/3_ABS.png",
-        "buttonColor": "blue",
+        "buttonColor": "green",
         "description": "This project involved the development of a comprehensive ABS simulation using a quarter-car model. The study focused on modeling the interaction between hydraulic lag, tire-road friction (Pacejka model), and control logic to optimize braking performance and vehicle stability under various road conditions.",
         "visual": "assets/banner/3_ABS.png",
         "contributions": [
@@ -110,7 +129,7 @@
         "title": "[FR] ENSTA - SoC & NoC Architecture Modeling (2023)",
         "excerpt": "Python-based object-oriented modeling of Systems-on-Chip (SoC) and Network-on-Chip (NoC) architectures.",
         "image": "assets/banner/6_IHM.png",
-        "buttonColor": "green",
+        "buttonColor": "blue",
         "description": "This computer science project focused on the high-level modeling of complex Systems-on-Chip. The goal was to develop a Python framework capable of simulating data exchanges between processing nodes, memory units, and a Network-on-Chip (NoC), using shortest-path algorithms to optimize communication efficiency.",
         "visual": "assets/banner/6_IHM.png",
         "contributions": [
@@ -128,7 +147,7 @@
         "title": "[FR] ENSTA - GNSS Positioning & Signal Analysis (2023)",
         "excerpt": "Technical study of Global Navigation Satellite Systems and real-time NMEA data processing.",
         "image": "assets/banner/7_GSTAR.png",
-        "buttonColor": "blue",
+        "buttonColor": "green",
         "description": "This systems engineering project focused on the principles of satellite-based positioning. The work involved analyzing error sources (ionospheric, clock bias) and implementing data processing for NMEA frames to achieve precise geographic positioning using GSTAR-IV and Spectra-80 receivers.",
         "visual": "assets/banner/7_GSTAR.png",
         "contributions": [
@@ -164,7 +183,7 @@
         "title": "[FR] TIPE - Tire-Road Friction & Braking Dynamics (2022)",
         "excerpt": "Mathematical modeling of tire friction coefficients and impact of weather conditions on braking safety.",
         "image": "assets/banner/9_tipe.png", 
-        "buttonColor": "green",
+        "buttonColor": "blue",
         "description": "This research project focused on the complex physics of the tire-road interface. Using the Pacejka 'Magic Formula', I modeled how different weather conditions (dry, wet, icy) affect the friction coefficient and, consequently, the efficiency of emergency braking and ABS triggering.",
         "visual": "assets/banner/9_tipe.png",
         "contributions": [
